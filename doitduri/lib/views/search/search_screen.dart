@@ -6,14 +6,14 @@ class SearchScreen extends StatelessWidget {
 
   const SearchScreen({super.key});
 
-
-
   @override
   Widget build(BuildContext context) {
-    return CupertinoTabView(
-      builder: (BuildContext context) {
-        return SearchPage();
-      },
+    return const CupertinoPageScaffold(
+      // navigationBar: CupertinoNavigationBar(
+      //   middle: Text("검색"),
+      //   trailing: Icon(CupertinoIcons.person_alt_circle),
+      // ),
+      child: SearchPage()
     );
   }
 }
